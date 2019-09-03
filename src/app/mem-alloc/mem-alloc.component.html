@@ -1,7 +1,7 @@
 <div id=wrapper>
     <p>Press the buttons to initiate the memory allocation test tests</p>
     <input type="text" [(ngModel)]="arraySize" placeholder="Enter amount of rows"/>
-    <button mat-raised-button color="primary" (click)="randomArray(arraySize, 1, 100)">generate array</button>
+    <button mat-raised-button color="primary" (click)="randomArray(arraySize)">generate array</button>
     <button mat-raised-button color="accent" (click)="startTest()">Start test</button>
     <button mat-raised-button color="warn" (click)="clearArrays()">Reset all</button>
     <ul id=oldArray>
