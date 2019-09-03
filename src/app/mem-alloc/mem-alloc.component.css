@@ -1,0 +1,10 @@
+#oldArray{
+  position: absolute;
+  width: 30%;
+  left: 0;
+}
+#newArray{
+  position: absolute;
+  width: 30%;
+  right: 0;
+}

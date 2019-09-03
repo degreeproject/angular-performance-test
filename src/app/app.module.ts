@@ -1,20 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { DOMTestComponent } from './dom-test/dom-test.component';
+import { MemAllocComponent } from './mem-alloc/mem-alloc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DOMTestComponent
+    DOMTestComponent,
+    MemAllocComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

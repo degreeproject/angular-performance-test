@@ -1,10 +1,10 @@
 <div id=wrapper>
   <p>Press the button to initiate the DOM-manipulation tests</p>
   <input type="text" class="form-control" [(ngModel)]="arraySize" placeholder="Enter amount of rows"/>
-  <button (click)="randomArraySize(arraySize)">Change rows</button>
-  <button (click)="startTest()">Render</button>
-  <button (click)="clearArray()">clear</button>
-  <button (click)="changeArray()">change</button>
+  <button mat-raised-button color="primary" (click)="randomArraySize(arraySize)">Change rows</button>
+  <button mat-raised-button color="warn" (click)="startTest()">Render</button>
+  <button mat-raised-button color="accent" (click)="clearArray()">clear</button>
+  <button mat-raised-button color="primary" (click)="changeArray()">change</button>
   <p>Set array size: {{array.length}}</p>
   <p>Rendering: {{renderRows}}</p>
   <ul *ngIf=renderRows>
