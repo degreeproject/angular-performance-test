@@ -12,13 +12,16 @@ export class MemAllocComponent {
   oldArray: any = [];
   newArray: any = [];
   arraySize: number;
+  done = false;
 
   startTest(): void {
     this.newArray = this.oldArray;
+    this.done = true;
   }
   clearArrays(): void {
     this.newArray = [];
     this.oldArray = [];
+    this.done = false;
   }
   randomArray(size): void {
     let i = 0;
