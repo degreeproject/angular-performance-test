@@ -3,7 +3,7 @@
     <input type="text" [(ngModel)]="arraySize" placeholder="Enter amount of rows"/>
     <button mat-raised-button color="primary" (click)="randomArray(arraySize)">generate array</button>
     <button mat-raised-button color="accent" (click)="startTest()">Start test</button>
-    <button mat-raised-button color="warn" (click)="clearArrays()">Reset all</button>
+    <button mat-raised-button color="warn" (click)="clearArrays()">Reset test</button>
     <ul id=oldArray>
       <li *ngFor="let index of oldArray">
         {{ index }}
